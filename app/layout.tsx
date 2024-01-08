@@ -28,7 +28,7 @@ export default function RootLayout({
 
                 <QueryProvider>
 
-                    {/* @ts-expect-error server component */}
+                    
                     <Navbar />
 
                     {authModal}
