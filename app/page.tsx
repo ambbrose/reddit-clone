@@ -3,8 +3,11 @@ import Link from "next/link";
 
 import CustomFeed from "@/components/home-page/custom-feed";
 import GeneralFeed from "@/components/home-page/general-feed";
-import { buttonVariants } from "@/components/ui/button"
+import { buttonVariants } from "@/components/ui/button";
 import { getAuthSession } from "@/lib/auth";
+
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
 
 export default async function Home() {
 
